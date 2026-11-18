@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Omar Sabri</title>
+<meta name="description" content="Dr. Omar Sabri, Assistant Professor of Cybersecurity and Coordinator of the Computer Science Department at Manar Al Janoub College, Jazan, Saudi Arabia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a research-office dashboard. Identity header, a row of headline figures,
+   then a two-column grid of panels (charts left, facts right), reading like a lab console. */
+:root{
+  --bg:#f3f5f7;
+  --panel:#ffffff;
+  --ink:#14202b;
+  --ink-2:#4a5866;
+  --muted:#7a8794;
+  --line:#dde3e8;
+  --accent:#0d6e6e;
+  --accent-soft:#e3f1f0;
+  --accent-2:#b4651c;
+  --font-display:"IBM Plex Serif", Georgia, "Times New Roman", serif;
+  --font-body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --radius:10px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e151c; --panel:#151f29; --ink:#e6edf2; --ink-2:#b2bfca; --muted:#82919e;
+    --line:#26343f; --accent:#4fb8b3; --accent-soft:#16302f; --accent-2:#e0a062;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e151c; --panel:#151f29; --ink:#e6edf2; --ink-2:#b2bfca; --muted:#82919e;
+  --line:#26343f; --accent:#4fb8b3; --accent-soft:#16302f; --accent-2:#e0a062;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+h1,h2,h3{text-wrap:balance;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 56px;display:grid;gap:20px}
+
+/* Header */
+.id{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center}
+.mono{width:84px;height:84px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-family:var(--font-display);font-size:30px;font-weight:600;letter-spacing:.02em}
+.id h1{font-family:var(--font-display);font-size:clamp(26px,3.4vw,36px);font-weight:600;line-height:1.15}
+.role{color:var(--ink-2);margin-top:6px;max-width:62ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:10px;font-size:14px;color:var(--muted)}
+.meta span{display:inline-flex;align-items:center;gap:6px}
+.status{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:6px 10px;border-radius:999px;white-space:nowrap}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.links{display:flex;flex-direction:column;gap:8px;align-items:stretch}
+.btn{display:inline-flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:14px;color:var(--ink);background:var(--panel);min-width:190px}
+.btn:hover{border-color:var(--accent);text-decoration:none}
+.btn small{font-family:var(--font-mono);color:var(--muted);font-size:11px}
+
+/* KPI row */
+.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;display:grid;gap:4px}
+.kpi b{font-family:var(--font-display);font-size:32px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums}
+.kpi span{font-size:13px;color:var(--ink-2)}
+
+/* Panels */
+.grid{display:grid;grid-template-columns:1.55fr 1fr;gap:20px;align-items:start}
+.col{display:grid;gap:20px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px}
+.panel h2{font-family:var(--font-body);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin-bottom:14px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.panel h2 small{font-family:var(--font-mono);font-weight:400;letter-spacing:0;text-transform:none;color:var(--muted);font-size:12px}
+.lede{color:var(--ink-2);margin:0 0 4px;max-width:68ch}
+
+/* Timeline */
+.tl{position:relative;display:grid;gap:10px;font-size:14px}
+.tl-row{display:grid;grid-template-columns:200px 1fr;gap:12px;align-items:center}
+.tl-label b{display:block;font-weight:500}
+.tl-label span{color:var(--muted);font-size:12px}
+.tl-track{position:relative;height:22px;border-radius:4px;background:var(--bg)}
+.tl-bar{position:absolute;top:3px;height:16px;border-radius:4px;background:var(--accent);opacity:.9}
+.tl-bar.ind{background:var(--accent-2)}
+.tl-bar.now{box-shadow:0 0 0 2px var(--panel),0 0 0 4px var(--accent)}
+.tl-axis{display:grid;grid-template-columns:200px 1fr;gap:12px;font-family:var(--font-mono);font-size:11px;color:var(--muted)}
+.tl-axis div{display:flex;justify-content:space-between}
+.legend{display:flex;gap:16px;font-size:12px;color:var(--ink-2);margin-top:10px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:6px}
+
+/* Bar chart */
+.chart{position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart text{font-family:var(--font-mono);font-size:11px;fill:var(--muted)}
+.chart .val{fill:var(--ink);font-size:12px;font-weight:500}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12px;padding:6px 9px;border-radius:6px;white-space:nowrap;transform:translate(-50%,-110%);opacity:0;transition:opacity .12s}
+.note{font-size:12px;color:var(--muted);margin-top:8px}
+
+/* Publications */
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.chip{font:500 12px var(--font-mono);border:1px solid var(--line);background:var(--panel);color:var(--ink-2);border-radius:999px;padding:5px 11px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.pubs{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.pubs li{display:grid;grid-template-columns:52px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.pubs li:first-child{border-top:0}
+.yr{font-family:var(--font-mono);font-size:13px;color:var(--accent);padding-top:2px}
+.pubs .t{font-weight:500;line-height:1.4}
+.pubs .v{font-size:13px;color:var(--ink-2);margin-top:2px}
+.pill{display:inline-block;font:500 10px var(--font-mono);letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:999px;background:var(--accent-soft);color:var(--accent);margin-left:6px;vertical-align:2px}
+.cite{font-family:var(--font-mono);font-size:12px;color:var(--accent);font-style:normal}
+.sep{width:1px;background:var(--line);margin:0 4px}
+.pill.press{background:transparent;border:1px solid var(--accent-2);color:var(--accent-2)}
+
+/* Facts */
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:13px;border:1px solid var(--line);border-radius:6px;padding:4px 9px;color:var(--ink);background:var(--bg)}
+dl.rows{margin:0;display:grid;gap:0}
+dl.rows div{display:grid;grid-template-columns:1fr auto;gap:12px;padding:9px 0;border-top:1px solid var(--line);font-size:14px}
+dl.rows div:first-child{border-top:0}
+dl.rows dt{color:var(--ink)}
+dl.rows dd{margin:0;font-family:var(--font-mono);font-size:12px;color:var(--muted);white-space:nowrap;padding-top:2px}
+.edu{display:grid;gap:12px}
+.edu div{display:grid;grid-template-columns:52px 1fr;gap:12px;font-size:14px}
+.edu b{font-weight:500;display:block}
+.edu span{color:var(--muted);font-size:13px}
+table.skills{width:100%;border-collapse:collapse;font-size:13px}
+table.skills th{text-align:left;font-weight:500;color:var(--ink);padding:8px 10px 8px 0;vertical-align:top;width:42%;border-top:1px solid var(--line)}
+table.skills td{color:var(--ink-2);padding:8px 0;border-top:1px solid var(--line)}
+table.skills tr:first-child th,table.skills tr:first-child td{border-top:0}
+.contact{display:grid;gap:8px;font-size:14px}
+.contact code{font-family:var(--font-mono);font-size:13px;color:var(--ink);user-select:all}
+footer{text-align:center;font-size:12px;color:var(--muted)}
+
+@media (max-width: 980px){
+  .grid{grid-template-columns:1fr}
+  .kpis{grid-template-columns:repeat(3,1fr)}
+  .id{grid-template-columns:auto 1fr}
+  .links{grid-column:1/-1;flex-direction:row;flex-wrap:wrap}
+  .btn{min-width:0;flex:1 1 180px}
+}
+@media (max-width: 560px){
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .id{grid-template-columns:1fr}
+  .mono{width:64px;height:64px;font-size:24px}
+  .tl-row,.tl-axis{grid-template-columns:1fr}
+  .tl-axis>span{display:none}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header class="id">
+    <div class="mono" aria-hidden="true">OS</div>
+    <div>
+      <h1>Dr. Omar Sabri</h1>
+      <p class="role">Assistant Professor of Cybersecurity and Coordinator of the Computer Science Department at Manar Al Janoub College. PhD in Management Information Systems, researching AI-driven information systems, cybersecurity and data analytics.</p>
+      <div class="meta">
+        <span>Jazan, Saudi Arabia</span>
+        <span>Canada · Saudi Arabia · Jordan</span>
+        <span class="status">Current: Manar Al Janoub College</span>
+      </div>
+    </div>
+    <nav class="links" aria-label="Research profiles">
+      <a class="btn" href="https://scholar.google.ca/citations?user=XtvII74AAAAJ" target="_blank" rel="noopener">Google Scholar <small>XtvII74AAAAJ</small></a>
+      <a class="btn" href="https://www.scopus.com/authid/detail.uri?authorId=57205955116" target="_blank" rel="noopener">Scopus <small>57205955116</small></a>
+      <a class="btn" href="https://www.webofscience.com/wos/author/record/ACS-9292-2022" target="_blank" rel="noopener">Web of Science <small>ACS-9292-2022</small></a>
+      <a class="btn" href="https://www.linkedin.com/in/omar-sabri-122968241" target="_blank" rel="noopener">LinkedIn <small>omar-sabri</small></a>
+    </nav>
+  </header>
+
+  <section class="kpis" aria-label="Headline figures">
+    <div class="kpi"><b id="k-cit">–</b><span id="k-cit-s">Citations</span></div>
+    <div class="kpi"><b id="k-h">–</b><span id="k-h-s">h-index</span></div>
+    <div class="kpi"><b id="k-i10">–</b><span id="k-i10-s">i10-index</span></div>
+    <div class="kpi"><b id="k-pubs">–</b><span>Publications indexed on Google Scholar</span></div>
+    <div class="kpi"><b>15+</b><span>Years in academia across 3 countries</span></div>
+  </section>
+  <p class="note" style="margin:-8px 0 0">Citation figures update daily from <a href="https://scholar.google.com/citations?user=XtvII74AAAAJ" target="_blank" rel="noopener">Google Scholar</a>. Last updated <span id="updated">–</span>.</p>
+
+  <div class="grid">
+    <div class="col">
+
+      <section class="panel" aria-labelledby="career-h">
+        <h2 id="career-h">Career timeline <small>2003 – present</small></h2>
+        <div class="tl" id="timeline"></div>
+        <div class="tl-axis"><span></span><div id="tl-axis"></div></div>
+        <div class="legend"><span><i style="background:var(--accent)"></i>Academic</span><span><i style="background:var(--accent-2)"></i>Industry</span></div>
+      </section>
+
+      <section class="panel" aria-labelledby="cite-h">
+        <h2 id="cite-h">Citations per year <small>Google Scholar · 2026 is year to date</small></h2>
+        <div class="chart" id="citechart"><div class="tip" id="tip1"></div></div>
+      </section>
+
+      <section class="panel" aria-labelledby="pubyear-h">
+        <h2 id="pubyear-h">Publications per year <small id="pubyear-n"></small></h2>
+        <div class="chart" id="pubchart"><div class="tip" id="tip2"></div></div>
+        <p class="note">One further 2026 article (JITE: Innovations in Practice) is in press and not yet counted.</p>
+      </section>
+
+      <section class="panel" aria-labelledby="pubs-h">
+        <h2 id="pubs-h">Publications <small id="pubcount"></small></h2>
+        <div class="filters" role="group" aria-label="Filter by year" id="filters"></div>
+        <ul class="pubs" id="publist"></ul>
+      </section>
+
+    </div>
+    <div class="col">
+
+      <section class="panel" aria-labelledby="now-h">
+        <h2 id="now-h">Current roles</h2>
+        <dl class="rows">
+          <div><dt>Assistant Professor – Cybersecurity<br><span style="color:var(--muted);font-size:13px">Manar Al Janoub College, Jazan</span></dt><dd>2026 –</dd></div>
+          <div><dt>Coordinator, Computer Science Department<br><span style="color:var(--muted);font-size:13px">Manar Al Janoub College, Jazan</span></dt><dd>2026 –</dd></div>
+        </dl>
+      </section>
+
+      <section class="panel" aria-labelledby="teach-h">
+        <h2 id="teach-h">Currently teaching</h2>
+        <div class="tags">
+          <span class="tag">Cybersecurity</span><span class="tag">Software Project Management</span><span class="tag">IT Security Systems &amp; Audit</span><span class="tag">Data Security &amp; Privacy</span><span class="tag">Software Security</span><span class="tag">System Administration</span><span class="tag">Visual Programming</span>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="res-h">
+        <h2 id="res-h">Research focus</h2>
+        <div class="tags">
+          <span class="tag">AI adoption in higher education</span><span class="tag">AI in healthcare</span><span class="tag">Lightweight encryption for IoT</span><span class="tag">Agentic AI</span><span class="tag">Big data</span><span class="tag">Blockchain &amp; auditing</span><span class="tag">E-learning systems</span><span class="tag">Knowledge management</span>
+        </div>
+        <p class="note">Peer reviewer for MDPI, Springer and Emerald journals, including <em>Information</em>, <em>Future Internet</em>, <em>Telecommunication Systems</em>, <em>International Journal of Sustainability in Higher Education</em> and <em>Computers</em>.</p>
+      </section>
+
+      <section class="panel" aria-labelledby="lead-h">
+        <h2 id="lead-h">Leadership <small>Jazan University</small></h2>
+        <dl class="rows">
+          <div><dt>Head, Department of MIS, College of Business</dt><dd>2019–21</dd></div>
+          <div><dt>Assistant Head, Department of MIS</dt><dd>2021–22</dd></div>
+          <div><dt>Accreditation, Plans &amp; Curriculum committees</dt><dd>2017–21</dd></div>
+          <div><dt>Coordinator, Academic Advising Unit</dt><dd>2018–20</dd></div>
+          <div><dt>Assistant Academic Coordinator</dt><dd>2018–20</dd></div>
+          <div><dt>Coordinator, Scientific Research Unit</dt><dd>2017–19</dd></div>
+          <div><dt>Coordinator, Timetable Unit</dt><dd>2017–19</dd></div>
+        </dl>
+      </section>
+
+      <section class="panel" aria-labelledby="edu-h">
+        <h2 id="edu-h">Education &amp; certification</h2>
+        <div class="edu">
+          <div><span class="yr">2011</span><p style="margin:0"><b>PhD, Management Information Systems</b><span>University of Banking and Financial Sciences, Amman</span></p></div>
+          <div><span class="yr">2005</span><p style="margin:0"><b>MSc, Computer Information Systems</b><span>Arab Academy for Banking and Financial Sciences, Amman</span></p></div>
+          <div><span class="yr">2002</span><p style="margin:0"><b>BSc, Computer Science</b><span>University of Jordan, Amman</span></p></div>
+          <div><span class="yr">2024</span><p style="margin:0"><b>Google Advanced Data Analytics Professional Certificate</b><span>Google</span></p></div>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="skills-h">
+        <h2 id="skills-h">Technical skills</h2>
+        <table class="skills">
+          <tr><th scope="row">Programming</th><td>Java, Python, PHP, R</td></tr>
+          <tr><th scope="row">Statistical analysis</th><td>SPSS, STATA, R, Python</td></tr>
+          <tr><th scope="row">Data analytics</th><td>Pandas, NumPy, Matplotlib, Seaborn</td></tr>
+          <tr><th scope="row">BI &amp; visualization</th><td>Tableau, Power BI, Orange</td></tr>
+          <tr><th scope="row">Systems &amp; networking</th><td>Advanced Linux, CCNA networking, router &amp; switch security</td></tr>
+          <tr><th scope="row">Databases</th><td>MySQL, Oracle, SQL Server</td></tr>
+          <tr><th scope="row">Cloud</th><td>AWS</td></tr>
+        </table>
+      </section>
+
+      <section class="panel" aria-labelledby="contact-h">
+        <h2 id="contact-h">Contact</h2>
+        <div class="contact">
+          <div>Email: <a href="mailto:mr.omarsabri@gmail.com"><code>mr.omarsabri@gmail.com</code></a></div>
+          <div>Open to research collaboration in AI, cybersecurity and digital transformation, and to academia–industry partnerships.</div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <footer>© 2026 Omar Sabri · Jazan, Saudi Arabia</footer>
+</main>
+
+<script>
+(function(){
+  /* ---- Career timeline ---- */
+  var START=2003, END=2027; // axis spans 2003 to the end of 2026
+  var roles=[
+    {org:"Manar Al Janoub College",role:"Asst. Professor & CS Coordinator",from:2026.67,to:END,kind:"acad",now:true,lab:"Sep 2026–present"},
+    {org:"St. Clair College, Canada",role:"Instructor",from:2024.42,to:2026.67,kind:"acad",lab:"2024–2026"},
+    {org:"Jazan University",role:"Asst. Professor, MIS",from:2016,to:2022,kind:"acad"},
+    {org:"Isra University, Jordan",role:"Asst. Professor, MIS",from:2011,to:2016,kind:"acad"},
+    {org:"Alrobban Trading Co.",role:"IT Administrator / Consultant",from:2003,to:2016,kind:"ind"}
+  ];
+  var span=END-START, tl=document.getElementById('timeline');
+  roles.forEach(function(r){
+    var row=document.createElement('div'); row.className='tl-row';
+    var left=((r.from-START)/span*100).toFixed(2), w=((r.to-r.from)/span*100).toFixed(2);
+    var yrs=r.lab||(Math.floor(r.from)+'–'+Math.round(r.to));
+    row.innerHTML='<div class="tl-label"><b>'+r.org+'</b><span>'+r.role+' · '+yrs+'</span></div>'+
+      '<div class="tl-track" role="img" aria-label="'+r.org+', '+yrs+'"><div class="tl-bar'+(r.kind==='ind'?' ind':'')+(r.now?' now':'')+'" style="left:'+left+'%;width:'+w+'%" title="'+r.org+' · '+yrs+'"></div></div>';
+    tl.appendChild(row);
+  });
+  var ax=document.getElementById('tl-axis');
+  [2003,2008,2013,2018,2023,2026].forEach(function(y){var s=document.createElement('span');s.textContent=y;ax.appendChild(s);});
+
+  /* ---- Data: scholar.json is refreshed daily by GitHub Actions via SerpAPI ---- */
+  /* Items from the CV that Google Scholar does not list yet (e.g. in press). Edit freely. */
+  var EXTRA=[
+    {y:2026,c:null,press:true,t:"Applying TAM2 to examine faculty adoption of AI-driven educational assistants in Saudi higher education: The influence of power distance",v:"Journal of Information Technology Education: Innovations in Practice"}
+  ];
+  /* Preferred links for specific papers (matched by start of title, case-insensitive). */
+  var LINKS={
+    "agentic artificial intelligence for the future internet":"https://jidmis.org/index.php/jidmis/article/view/5573",
+    "does culture matter in ai adoption":"https://doi.org/10.28945/5886",
+    "the role of artificial intelligence in improving diagnostic":"https://doi.org/10.32604/cmc.2025.066987"
+  };
+  var pubs=[];
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+  function start(D){
+  var norm=function(t){return (t||'').toLowerCase().replace(/[^a-z0-9 ]/g,'');};
+  pubs=D.articles.map(function(a){
+    var link=a.link||'';
+    Object.keys(LINKS).forEach(function(k){ if(norm(a.title).indexOf(norm(k))===0) link=LINKS[k]; });
+    var venue=(a.venue||'').replace(/,?\s*(19|20)\d\d\s*$/,'');
+    return {y:a.year,c:a.cites,t:a.title,v:venue,u:link};
+  }).filter(function(p){return p.y;});
+  EXTRA.forEach(function(e){ if(!pubs.some(function(p){return norm(p.t)===norm(e.t);})) pubs.push(e); });
+  function sinceTxt(m){return m.since!=null&&m.since_year?(m.since+' since '+m.since_year):'';}
+  document.getElementById('k-cit').textContent=D.citations.all;
+  document.getElementById('k-cit-s').textContent='Citations'+(sinceTxt(D.citations)?' · '+sinceTxt(D.citations):'');
+  document.getElementById('k-h').textContent=D.h_index.all;
+  document.getElementById('k-h-s').textContent='h-index'+(sinceTxt(D.h_index)?' · '+sinceTxt(D.h_index):'');
+  document.getElementById('k-i10').textContent=D.i10_index.all;
+  document.getElementById('k-i10-s').textContent='i10-index'+(sinceTxt(D.i10_index)?' · '+sinceTxt(D.i10_index):'');
+  document.getElementById('k-pubs').textContent=D.articles.length;
+  document.getElementById('pubyear-n').textContent=D.articles.length+' indexed works';
+  var up=new Date(D.updated);
+  document.getElementById('updated').textContent=isNaN(up)?D.updated:up.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
+  var list=document.getElementById('publist'), count=document.getElementById('pubcount');
+  var state={range:'all',sort:'cites'};
+  function render(){
+    var rows=pubs.filter(function(p){
+      if(state.range==='recent') return p.y>=2021;
+      if(state.range==='early') return p.y<2021;
+      return true;
+    }).slice().sort(function(a,b){
+      if(state.sort==='year') return b.y-a.y || (b.c||0)-(a.c||0);
+      return (b.c==null?-1:b.c)-(a.c==null?-1:a.c) || b.y-a.y;
+    });
+    list.innerHTML=rows.map(function(p){
+      var title=p.u?'<a href="'+p.u+'" target="_blank" rel="noopener">'+esc(p.t)+'</a>':esc(p.t);
+      var cites=p.press?'<span class="pill press">In press</span>':'<span class="cite">'+p.c+(p.c===1?' citation':' citations')+'</span>';
+      return '<li><span class="yr">'+p.y+'</span><div><div class="t">'+title+'</div><div class="v"><em>'+esc(p.v)+'</em> · '+cites+'</div></div></li>';
+    }).join('');
+    count.textContent=rows.length+' shown';
+  }
+  var f=document.getElementById('filters');
+  [['range','all','All years'],['range','recent','2021–2026'],['range','early','2012–2020'],['sort','cites','Most cited'],['sort','year','Newest']].forEach(function(o,i){
+    var b=document.createElement('button'); b.type='button'; b.className='chip'; b.id='f-'+o[0]+'-'+o[1];
+    b.textContent=o[2]; b.dataset.group=o[0];
+    b.setAttribute('aria-pressed', state[o[0]]===o[1]?'true':'false');
+    if(i===3){var sep=document.createElement('span');sep.className='sep';sep.setAttribute('aria-hidden','true');f.appendChild(sep);}
+    b.addEventListener('click',function(){
+      state[o[0]]=o[1];
+      f.querySelectorAll('.chip[data-group="'+o[0]+'"]').forEach(function(c){c.setAttribute('aria-pressed','false');});
+      b.setAttribute('aria-pressed','true'); render();
+    });
+    f.appendChild(b);
+  });
+  render();
+
+  /* ---- Bar chart helper ---- */
+  var ns='http://www.w3.org/2000/svg';
+  function el(n,a){var e=document.createElementNS(ns,n);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function niceMax(v){var steps=[1,2,5,10,20,25,50,100,200,250,500];for(var i=0;i<steps.length;i++){if(steps[i]*4>=v)return steps[i]*4;}return Math.ceil(v/100)*100;}
+  function bars(boxId,tipId,data,unit,label,highlightLast){
+    var box=document.getElementById(boxId), tip=document.getElementById(tipId);
+    var W=640,H=230,pl=34,pr=6,pt=20,pb=26;
+    var mx=Math.max.apply(null,data.map(function(d){return d.n;}));
+    var top=niceMax(mx), stepV=top/4;
+    var cw=(W-pl-pr)/data.length, bw=Math.min(30,cw*0.62);
+    var svg=el('svg',{viewBox:'0 0 '+W+' '+H,role:'img','aria-label':label+': '+data.map(function(d){return d.y+' '+d.n;}).join(', ')});
+    for(var g=0; g<=top; g+=stepV){
+      var gy=pt+(H-pt-pb)*(1-g/top);
+      svg.appendChild(el('line',{x1:pl,x2:W-pr,y1:gy,y2:gy,stroke:'var(--line)','stroke-width':1}));
+      var tx=el('text',{x:pl-8,y:gy+4,'text-anchor':'end'}); tx.textContent=g; svg.appendChild(tx);
+    }
+    var showEvery=data.length>12?2:1;
+    data.forEach(function(d,i){
+      var cx=pl+cw*i+cw/2, h=(H-pt-pb)*(d.n/top), y=H-pb-h, last=(i===data.length-1);
+      if(d.n>0){
+        var r=Math.min(4,h/2);
+        var p='M'+(cx-bw/2)+','+(H-pb)+'V'+(y+r)+'Q'+(cx-bw/2)+','+y+' '+(cx-bw/2+r)+','+y+'H'+(cx+bw/2-r)+'Q'+(cx+bw/2)+','+y+' '+(cx+bw/2)+','+(y+r)+'V'+(H-pb)+'Z';
+        svg.appendChild(el('path',{d:p,fill:'var(--accent)','fill-opacity':(highlightLast&&!last)?.55:1}));
+      }
+      if(last||d.n===mx){var v=el('text',{x:cx,y:y-6,'text-anchor':'middle','class':'val'}); v.textContent=d.n; svg.appendChild(v);}
+      if(i%showEvery===(data.length-1)%showEvery){var lx=el('text',{x:cx,y:H-8,'text-anchor':'middle'}); lx.textContent=d.y; svg.appendChild(lx);}
+      var hit=el('rect',{x:pl+cw*i,y:pt,width:cw,height:H-pt-pb,fill:'transparent'});
+      hit.addEventListener('mouseenter',function(){
+        var sc=box.getBoundingClientRect().width/W;
+        tip.textContent=d.y+': '+d.n+' '+(d.n===1?unit:unit+'s');
+        tip.style.left=(cx*sc)+'px'; tip.style.top=((H-pb-Math.max(h,10))*sc)+'px'; tip.style.opacity=1;
+      });
+      hit.addEventListener('mouseleave',function(){tip.style.opacity=0;});
+      svg.appendChild(hit);
+    });
+    svg.appendChild(el('line',{x1:pl,x2:W-pr,y1:H-pb,y2:H-pb,stroke:'var(--muted)','stroke-width':1}));
+    box.insertBefore(svg,tip);
+  }
+  var cpy=D.citations_per_year.slice().sort(function(a,b){return a.year-b.year;});
+  bars('citechart','tip1',cpy.map(function(g){return {y:g.year,n:g.citations};}),'citation','Citations per year',true);
+  var ys=pubs.filter(function(p){return !p.press;}).map(function(p){return p.y;});
+  var py=[];for(var yy=Math.min.apply(null,ys);yy<=Math.max.apply(null,ys);yy++)py.push(yy);
+  bars('pubchart','tip2',py.map(function(y){return {y:y,n:pubs.filter(function(p){return p.y===y&&!p.press;}).length};}),'publication','Publications per year',false);
+  }
+  fetch('scholar.json?v='+Date.now()).then(function(r){if(!r.ok)throw r;return r.json();}).then(start).catch(function(){
+    document.getElementById('updated').textContent='unavailable (open the site through GitHub Pages)';
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+{
+  "updated": "2026-11-18T08:30:00Z",
+  "source": "https://scholar.google.com/citations?user=XtvII74AAAAJ",
+  "name": "Omar Sabri",
+  "affiliation": "Computer Science, Manar Aljanoub College, KSA",
+  "interests": [
+    "AI",
+    "Cybersecurity",
+    "Education Technology",
+    "IoT",
+    "Data Analytics"
+  ],
+  "citations": {
+    "all": 438,
+    "since": 348,
+    "since_year": 2021
+  },
+  "h_index": {
+    "all": 13,
+    "since": 11,
+    "since_year": 2021
+  },
+  "i10_index": {
+    "all": 16,
+    "since": 11,
+    "since_year": 2021
+  },
+  "citations_per_year": [
+    {
+      "year": 2014,
+      "citations": 3
+    },
+    {
+      "year": 2015,
+      "citations": 2
+    },
+    {
+      "year": 2016,
+      "citations": 7
+    },
+    {
+      "year": 2017,
+      "citations": 5
+    },
+    {
+      "year": 2018,
+      "citations": 22
+    },
+    {
+      "year": 2019,
+      "citations": 23
+    },
+    {
+      "year": 2020,
+      "citations": 27
+    },
+    {
+      "year": 2021,
+      "citations": 32
+    },
+    {
+      "year": 2022,
+      "citations": 22
+    },
+    {
+      "year": 2023,
+      "citations": 22
+    },
+    {
+      "year": 2024,
+      "citations": 40
+    },
+    {
+      "year": 2025,
+      "citations": 64
+    },
+    {
+      "year": 2026,
+      "citations": 164
+    }
+  ],
+  "articles": [
+    {
+      "title": "The adoption of an e-learning system using information systems success model: a case study of Jazan University",
+      "authors": "",
+      "venue": "PeerJ Computer Science, 2021",
+      "year": 2021,
+      "cites": 51,
+      "link": ""
+    },
+    {
+      "title": "Reinforcement learning for industrial automation: A comprehensive review of adaptive control and decision-making in smart factories",
+      "authors": "",
+      "venue": "Machines 13 (12), 1140, 2025",
+      "year": 2025,
+      "cites": 45,
+      "link": ""
+    },
+    {
+      "title": "A cultural e-government readiness model",
+      "authors": "",
+      "venue": "Intelligent Information Management 4 (5), 212, 2012",
+      "year": 2012,
+      "cites": 45,
+      "link": ""
+    },
+    {
+      "title": "Internet of Things: An exploration study of opportunities and challenges",
+      "authors": "",
+      "venue": "2017 international conference on engineering & MIS (ICEMIS), 1-4, 2017",
+      "year": 2017,
+      "cites": 39,
+      "link": ""
+    },
+    {
+      "title": "The Role of Artificial Intelligence in Improving Diagnostic Accuracy in Medical Imaging: A Review",
+      "authors": "",
+      "venue": "Computers, Materials & Continua, 2025",
+      "year": 2025,
+      "cites": 34,
+      "link": ""
+    },
+    {
+      "title": "A Lightweight Encryption Method for IoT-Based Healthcare Applications: A Review and Future Prospects",
+      "authors": "",
+      "venue": "IoT 157, 288-302, 2025",
+      "year": 2025,
+      "cites": 33,
+      "link": ""
+    },
+    {
+      "title": "A critical review of auditing at the time of blockchain technology–a bibliometric analysis",
+      "authors": "",
+      "venue": "EuroMed Journal of Business, 2023",
+      "year": 2023,
+      "cites": 33,
+      "link": ""
+    },
+    {
+      "title": "Exploring the Evolution of Big Data Technologies: A Systematic Literature Review of Trends, Challenges, and Future Directions",
+      "authors": "",
+      "venue": "Future Internet 17 (9), 2025",
+      "year": 2025,
+      "cites": 24,
+      "link": ""
+    },
+    {
+      "title": "Impact of Blackboard technology acceptance on students learning in Saudi Arabia",
+      "authors": "",
+      "venue": "Journal of Educators Online 20 (3), 2023",
+      "year": 2023,
+      "cites": 21,
+      "link": ""
+    },
+    {
+      "title": "The role of hofstede dimensions on the readiness of iot implementation case study: Saudi universities",
+      "authors": "",
+      "venue": "Journal of Theoretical and Applied Information Technology 98 (16), 1-12, 2020",
+      "year": 2020,
+      "cites": 18,
+      "link": ""
+    },
+    {
+      "title": "A study of adopting cloud computing from enterprise perspective using DeLone and McLean IS success model",
+      "authors": "",
+      "venue": "International Journal of Computer Science and Information Security 14, 32, 2016",
+      "year": 2016,
+      "cites": 18,
+      "link": ""
+    },
+    {
+      "title": "A survey on lightweight encryption methods for IoT-enabled healthcare applications",
+      "authors": "",
+      "venue": "Proceedings of the 7th International Conference on Future Networks and Distributed Systems, 2023",
+      "year": 2023,
+      "cites": 14,
+      "link": ""
+    },
+    {
+      "title": "Integrating knowledge life cycle within software development process to produce a quality software product",
+      "authors": "",
+      "venue": "Proceedings of 2017 International Conference on Engineering and Technology, 2018",
+      "year": 2018,
+      "cites": 13,
+      "link": ""
+    },
+    {
+      "title": "An evaluation of MIS implementation success factors",
+      "authors": "",
+      "venue": "Proceedings of the International Conference on Engineering & MIS 2015, 1-3, 2015",
+      "year": 2015,
+      "cites": 11,
+      "link": ""
+    },
+    {
+      "title": "Applying the updated Delone and Mclean IS success model for enterprise cloud computing readiness",
+      "authors": "",
+      "venue": "International Journal of Cloud Applications and Computing (IJCAC) 6 (2), 49-54, 2016",
+      "year": 2016,
+      "cites": 10,
+      "link": ""
+    },
+    {
+      "title": "Measuring IS success factors of adopting cloud computing from enterprise overview",
+      "authors": "",
+      "venue": "Proceedings of the International Conference on Engineering & MIS 2015, 1-5, 2015",
+      "year": 2015,
+      "cites": 10,
+      "link": ""
+    },
+    {
+      "title": "Toward a user preferences agent based web service composition",
+      "authors": "",
+      "venue": "International Journal of Information Technology & Computer Science (IJITCS), 2014",
+      "year": 2014,
+      "cites": 6,
+      "link": ""
+    },
+    {
+      "title": "An enhanced Arabic information retrieval using genetic algorithms: An experimental study and results",
+      "authors": "",
+      "venue": "Aust. J. Basic Appl. Sci. 7, 242-248, 2013",
+      "year": 2013,
+      "cites": 5,
+      "link": ""
+    },
+    {
+      "title": "A Novel Model for Aligning Knowledge Management Activities within the Process of Developing Quality Software",
+      "authors": "",
+      "venue": "Recent Advances in Computer Science and Communication 13 (3), 2020",
+      "year": 2020,
+      "cites": 3,
+      "link": ""
+    },
+    {
+      "title": "Super encryption standard (SES): a key-dependent block cipher for image encryption",
+      "authors": "",
+      "venue": "Information 17 (1), 2, 2025",
+      "year": 2025,
+      "cites": 2,
+      "link": ""
+    },
+    {
+      "title": "From Algorithm to Policy: A Bibliometric Analysis of Implementation Science and Governance Frameworks in AI Healthcare Research (2016–2026)",
+      "authors": "",
+      "venue": "Healthcare 14 (16), 2506, 2026",
+      "year": 2026,
+      "cites": 1,
+      "link": ""
+    },
+    {
+      "title": "Data Quality and the Trust–Interpretability Paradox: Toward a Mid-Range Framework for AI Adoption in Educational Information Systems",
+      "authors": "",
+      "venue": "Journal of Information Technology Education: Research 25, 17, 2026",
+      "year": 2026,
+      "cites": 1,
+      "link": ""
+    },
+    {
+      "title": "User Preference-Based Web Service Composition and Execution Framework",
+      "authors": "",
+      "venue": "Advanced Research on Cloud Computing Design and Applications, 118-138, 2015",
+      "year": 2015,
+      "cites": 1,
+      "link": ""
+    },
+    {
+      "title": "Agentic artificial intelligence for the future internet: A bibliometric analysis of emerging research trends",
+      "authors": "",
+      "venue": "Journal of Intelligent Decision Making and Information Science, 2026",
+      "year": 2026,
+      "cites": 0,
+      "link": ""
+    },
+    {
+      "title": "Does Culture Matter in AI Adoption? Extending TAM2 with Power Distance in Saudi Higher Education",
+      "authors": "",
+      "venue": "Journal of Information Technology Education: Innovations in Practice 25, 43, 2026",
+      "year": 2026,
+      "cites": 0,
+      "link": ""
+    },
+    {
+      "title": "The Effect of Application Requirement Availability on Cloud Computing Adoption in Jordan",
+      "authors": "",
+      "venue": "International Advanced Research Journal in Science, Engineering and Technology, 2016",
+      "year": 2016,
+      "cites": 0,
+      "link": ""
+    }
+  ]
+}
