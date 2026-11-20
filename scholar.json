@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T10:28:15Z",
+  "updated": "2026-11-20T06:59:49Z",
   "source": "https://scholar.google.com/citations?user=XtvII74AAAAJ",
   "name": "Omar Sabri",
   "affiliation": "Computer Science, Manar Aljanoub College, KSA",
@@ -11,8 +11,8 @@
     "Data Analytics"
   ],
   "citations": {
-    "all": 438,
-    "since": 348,
+    "all": 447,
+    "since": 357,
     "since_year": 2021
   },
   "h_index": {
@@ -72,11 +72,11 @@
     },
     {
       "year": 2025,
-      "citations": 64
+      "citations": 65
     },
     {
       "year": 2026,
-      "citations": 164
+      "citations": 171
     }
   ],
   "articles": [
@@ -85,7 +85,7 @@
       "authors": "B Al-shargabi, O Sabri, S Aljawarneh",
       "venue": "PeerJ Computer Science, 2021",
       "year": 2021,
-      "cites": 51,
+      "cites": 52,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:LkGwnXOMwfcC"
     },
     {
@@ -93,7 +93,7 @@
       "authors": "YM Alginahi, O Sabri, W Said",
       "venue": "Machines 13 (12), 1140, 2025",
       "year": 2025,
-      "cites": 45,
+      "cites": 46,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:KlAtU1dfN6UC"
     },
     {
@@ -117,7 +117,7 @@
       "authors": "S Omar, AS Bassam, A Abdelrahman",
       "venue": "Computers, Materials & Continua, https://doi.org/10.32604/cmc.2025.066987, 2025",
       "year": 2025,
-      "cites": 34,
+      "cites": 35,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:MXK_kJrjxJIC"
     },
     {
@@ -217,12 +217,28 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:u-x6o8ySG0sC"
     },
     {
+      "title": "Reinforcement learning for industrial automation: A comprehensive review of adaptive control and decision-making in smart factories. Machines, 13 (12), 1140",
+      "authors": "YM Alginahi, O Sabri, W Said",
+      "venue": "",
+      "year": 2025,
+      "cites": 5,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:4DMP91E08xMC"
+    },
+    {
       "title": "An enhanced arabic information retrieval using genetic algorithms: An experimental study and Results",
       "authors": "B Al-Shargabi, O Sabri, S Aljawarneh",
       "venue": "Aust. J. Basic Appl. Sci. 7, 242-248, 2013",
       "year": 2013,
       "cites": 5,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:_FxGoFyzp5QC"
+    },
+    {
+      "title": "Super encryption standard (ses): a key-dependent block cipher for image encryption",
+      "authors": "M Abbas Fadhil Al-Husainy, B Al-Shargabi, O Sabri",
+      "venue": "Information 17 (1), 2, 2025",
+      "year": 2025,
+      "cites": 3,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:Zph67rFs4hoC"
     },
     {
       "title": "A Novel Model for Aligning Knowledge Management Activities within the Process of Developing Quality Software",
@@ -233,14 +249,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:YsMSGLbcyi4C"
     },
     {
-      "title": "Super encryption standard (ses): a key-dependent block cipher for image encryption",
-      "authors": "M Abbas Fadhil Al-Husainy, B Al-Shargabi, O Sabri",
-      "venue": "Information 17 (1), 2, 2025",
-      "year": 2025,
-      "cites": 2,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:Zph67rFs4hoC"
-    },
-    {
       "title": "From Algorithm to Policy: A Bibliometric Analysis of Implementation Science and Governance Frameworks in AI Healthcare Research (2016–2026)",
       "authors": "O Sabri, SA Alabdali",
       "venue": "Healthcare 14 (16), 2506, 2026",
@@ -249,9 +257,9 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:M3ejUd6NZC8C"
     },
     {
-      "title": "Data Quality and the Trust–Interpretability Paradox: Toward a Mid-Range Framework for AI Adoption in Educational Information Systems",
-      "authors": "O Sabri, B Al-Shargabi, ON Attia",
-      "venue": "Journal of Information Technology Education: Research 25, 17, 2026",
+      "title": "DATA QUALITY AND THE TRUST--INTERPRETABILITY PARADOX: TOWARD A MID-RANGE FRAMEWORK FOR AI ADOPTION IN EDUCATIONAL INFORMATION SYSTEMS.",
+      "authors": "O Sabri, B Al-Shargabi, ON Atti",
+      "venue": "Journal of Information Technology Education: Research 25, 1, 2026",
       "year": 2026,
       "cites": 1,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:4TOpqqG69KYC"
