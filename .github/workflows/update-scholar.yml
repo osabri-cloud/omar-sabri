@@ -3,6 +3,7 @@ name: Update Google Scholar data
 on:
   schedule:
     - cron: "17 2 * * *"   # every day at 02:17 UTC (05:17 in Jazan)
+    - cron: "47 13 * * *"  # second daily run at 13:47 UTC (16:47 in Jazan) in case GitHub skips one
   workflow_dispatch:        # lets you run it by hand from the Actions tab
 
 permissions:
