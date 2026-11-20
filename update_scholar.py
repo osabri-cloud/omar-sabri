@@ -20,6 +20,7 @@ def fetch(api_key):
         "author_id": AUTHOR_ID,
         "hl": "en",
         "num": "100",          # up to 100 articles in a single search
+        "no_cache": "true",    # always fetch a fresh copy, never SerpAPI's cached one
         "api_key": api_key,
     }
     url = "https://serpapi.com/search.json?" + urllib.parse.urlencode(params)
