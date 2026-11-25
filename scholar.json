@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T23:16:49Z",
+  "updated": "2026-11-25T11:25:40Z",
   "source": "https://scholar.google.com/citations?user=XtvII74AAAAJ",
   "name": "Omar Sabri",
   "affiliation": "Computer Science, Manar Aljanoub College, KSA",
@@ -11,8 +11,8 @@
     "Data Analytics"
   ],
   "citations": {
-    "all": 447,
-    "since": 357,
+    "all": 448,
+    "since": 358,
     "since_year": 2021
   },
   "h_index": {
@@ -76,7 +76,7 @@
     },
     {
       "year": 2026,
-      "citations": 171
+      "citations": 172
     }
   ],
   "articles": [
@@ -121,20 +121,20 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:MXK_kJrjxJIC"
     },
     {
+      "title": "A critical review of auditing at the time of blockchain technology–a bibliometric analysis",
+      "authors": "T Hakami, O Sabri, B Al-Shargabi, MM Rahmat, O Nashat Attia",
+      "venue": "EuroMed Journal of Business, 2023",
+      "year": 2023,
+      "cites": 34,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:Se3iqnhoufwC"
+    },
+    {
       "title": "A Lightweight Encryption Method for IoT-Based Healthcare Applications: A Review and Future Prospects",
       "authors": "O Sabri, B Al-Shargabi, A Abuarqoub, TA Hakami",
       "venue": "IoT 157, 288-302, 2025",
       "year": 2025,
       "cites": 33,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:0EnyYjriUFMC"
-    },
-    {
-      "title": "A critical review of auditing at the time of blockchain technology–a bibliometric analysis",
-      "authors": "T Hakami, O Sabri, B Al-Shargabi, MM Rahmat, O Nashat Attia",
-      "venue": "EuroMed Journal of Business, 2023",
-      "year": 2023,
-      "cites": 33,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:Se3iqnhoufwC"
     },
     {
       "title": "Exploring the Evolution of Big Data Technologies: A Systematic Literature Review of Trends, Challenges, and Future Directions",
@@ -257,9 +257,9 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:M3ejUd6NZC8C"
     },
     {
-      "title": "DATA QUALITY AND THE TRUST--INTERPRETABILITY PARADOX: TOWARD A MID-RANGE FRAMEWORK FOR AI ADOPTION IN EDUCATIONAL INFORMATION SYSTEMS.",
-      "authors": "O Sabri, B Al-Shargabi, ON Atti",
-      "venue": "Journal of Information Technology Education: Research 25, 1, 2026",
+      "title": "Data Quality and the Trust–Interpretability Paradox: Toward a Mid-Range Framework for AI Adoption in Educational Information Systems",
+      "authors": "O Sabri, B Al-Shargabi, ON Attia",
+      "venue": "Journal of Information Technology Education: Research 25, 17, 2026",
       "year": 2026,
       "cites": 1,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:4TOpqqG69KYC"
