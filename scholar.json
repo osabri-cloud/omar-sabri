@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T10:59:52Z",
+  "updated": "2026-11-26T22:37:18Z",
   "source": "https://scholar.google.com/citations?user=XtvII74AAAAJ",
   "name": "Omar Sabri",
   "affiliation": "Computer Science, Manar Aljanoub College, KSA",
@@ -68,7 +68,7 @@
     },
     {
       "year": 2024,
-      "citations": 40
+      "citations": 39
     },
     {
       "year": 2025,
@@ -76,7 +76,7 @@
     },
     {
       "year": 2026,
-      "citations": 172
+      "citations": 173
     }
   ],
   "articles": [
@@ -149,7 +149,7 @@
       "authors": "TA Hakami, B Al-Shargabi, O Sabri, SMFA Khan",
       "venue": "Journal of Educators Online 20 (3), 2023",
       "year": 2023,
-      "cites": 21,
+      "cites": 20,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:roLk4NBRz8UC"
     },
     {
@@ -249,20 +249,20 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:YsMSGLbcyi4C"
     },
     {
+      "title": "DATA QUALITY AND THE TRUST--INTERPRETABILITY PARADOX: TOWARD A MID-RANGE FRAMEWORK FOR AI ADOPTION IN EDUCATIONAL INFORMATION SYSTEMS.",
+      "authors": "O Sabri, B Al-Shargabi, ON Atti",
+      "venue": "Journal of Information Technology Education: Research 25, 1, 2026",
+      "year": 2026,
+      "cites": 2,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:4TOpqqG69KYC"
+    },
+    {
       "title": "From Algorithm to Policy: A Bibliometric Analysis of Implementation Science and Governance Frameworks in AI Healthcare Research (2016–2026)",
       "authors": "O Sabri, SA Alabdali",
       "venue": "Healthcare 14 (16), 2506, 2026",
       "year": 2026,
       "cites": 1,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:M3ejUd6NZC8C"
-    },
-    {
-      "title": "Data Quality and the Trust–Interpretability Paradox: Toward a Mid-Range Framework for AI Adoption in Educational Information Systems",
-      "authors": "O Sabri, B Al-Shargabi, ON Attia",
-      "venue": "Journal of Information Technology Education: Research 25, 17, 2026",
-      "year": 2026,
-      "cites": 1,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:4TOpqqG69KYC"
     },
     {
       "title": "User Preference-Based Web Service Composition and Execution Framework",
