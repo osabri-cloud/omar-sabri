@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T10:57:59Z",
+  "updated": "2026-11-27T22:21:42Z",
   "source": "https://scholar.google.com/citations?user=XtvII74AAAAJ",
   "name": "Omar Sabri",
   "affiliation": "Computer Science, Manar Aljanoub College, KSA",
@@ -11,8 +11,8 @@
     "Data Analytics"
   ],
   "citations": {
-    "all": 448,
-    "since": 358,
+    "all": 450,
+    "since": 360,
     "since_year": 2021
   },
   "h_index": {
@@ -76,7 +76,7 @@
     },
     {
       "year": 2026,
-      "citations": 173
+      "citations": 176
     }
   ],
   "articles": [
@@ -85,7 +85,7 @@
       "authors": "B Al-shargabi, O Sabri, S Aljawarneh",
       "venue": "PeerJ Computer Science, 2021",
       "year": 2021,
-      "cites": 52,
+      "cites": 53,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:LkGwnXOMwfcC"
     },
     {
@@ -93,7 +93,7 @@
       "authors": "YM Alginahi, O Sabri, W Said",
       "venue": "Machines 13 (12), 1140, 2025",
       "year": 2025,
-      "cites": 46,
+      "cites": 47,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XtvII74AAAAJ&pagesize=100&citation_for_view=XtvII74AAAAJ:KlAtU1dfN6UC"
     },
     {
